@@ -7,10 +7,12 @@ body {
 #wrapper {
     display: grid;
     grid-template-areas: 
-    'ni ni ni ni ni'
-    
-    
-
+    'nv nv nv nv nv'
+    'mn mn mn mn mn'    
+    'mn mn mn mn mn'
+    'mn mn mn mn mn'
+    'mn mn mn mn mn'
+    'mn mn mn mn mn'
     'ft ft ft ft ft'
     'ft ft ft ft ft'
     ;
@@ -23,25 +25,86 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #b5ffd5;
+    background-color: #1dd8a9;
     height: 3em;
     margin-top: 0px;
     padding-top: 2em;
-    list-style-type: none;
-    border-bottom:inset #B34B44 10px;
+    border-bottom:inset rgb(255, 140, 0) 10px;
     font-family: 'Mochiy Pop P One', sans-serif;
-    color: #FF675F;
+    color: rgb(179, 98, 0);
     width: 100%;
+    margin-bottom:0px;
 
 }
 
 footer {
 grid-area: ft;
 display:flex;
-flex-direction: column;
-justify-content: space-evenly;
+flex-direction: row;
+justify-content: center;
 background-color:teal;
 height: 7em;
 border-top:solid rgb(1, 63, 63) 10px;
 
 }
+
+#footerindex {
+text-align:center;
+line-height: 1.3em;
+
+}
+
+.navbar {
+    grid-area:nv;
+    display: flex;
+
+}
+
+li {
+    list-style-type: none
+}
+
+
+#menu {
+grid-area: mn;
+display:grid;
+grid-template-areas: 
+'ll lr'
+'ll lr'
+'ll lr'
+'ll lr'
+'ll lr'
+;
+grid-template-columns: 50% 50%;
+text-overflow: ellipsis;
+text-align:center;
+background-color:rgb(201, 247, 179);
+}
+
+#ListLeft {
+    grid-area: ll;
+   border-right:1px black solid;
+   padding-right: 5em;
+}
+
+#MenuLine {
+    grid-area:ml;
+}
+#ListRight {
+    grid-area:lr;
+    border-left:1px black solid;
+}
+
+h1 {
+    color:rgb(0, 94, 94);
+    text-decoration: underline 8px;
+    
+    
+}
+
+h2 {
+    color:rgb(255, 140, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 1px;
+}
+

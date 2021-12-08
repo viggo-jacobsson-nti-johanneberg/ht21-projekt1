@@ -19,10 +19,7 @@ body {
 
 }
 
-#logo {
-    width: 5em;
-    height: 5em;
-}
+
 
 #navitems {
     grid-area:ni;
@@ -93,6 +90,7 @@ background-color:rgb(201, 247, 179);
 
 #MenuLine {
     grid-area:ml;
+    color: rgb(255, 140, 0);
 }
 #ListRight {
     grid-area:lr;
@@ -110,5 +108,11 @@ h2 {
     color:rgb(255, 140, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    letter-spacing: 1px;
+}
+
+#logo {
+
+    position: relative;
+    top:-30px;
 }
 

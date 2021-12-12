@@ -1,0 +1,139 @@
+
+body {
+    margin: 0px;
+    
+}
+
+#navitems {
+    grid-area:ni;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #9db174;
+    height: 3em;
+    margin-top: 0px;
+    padding-top: 2em;
+    border-bottom:inset #544336 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #544336;
+    width: 100%;
+    margin-bottom:0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    grid-area:nv;
+    display: flex;
+}
+
+footer {
+    grid-area: ft;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9db174;
+    height: 7em;
+    border-top:solid #544336 10px;
+    color: rgb(40, 48, 8);
+}
+    
+#footerindex {
+    text-align:center;
+    line-height: 1.5em;
+}
+
+li {
+    list-style-type: none
+}
+
+h1 {
+    color:rgb(4, 131, 131);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+
+h2 {
+    color:rgb(255, 140, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 1px;
+}
+
+#logo {
+
+    position: relative;
+    top:-30px;
+}
+
+a {
+    text-decoration: none;
+    color:#544336;
+}
+
+#restu_name {
+    color:rgb(81, 94, 23);
+    text-decoration: none;
+    font-size: 2em;
+    position:relative;
+    top:-15px;
+    left: -60px;
+}
+
+
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nv nv'
+    'mn mn'
+    'mn mn'
+    'ft ft'
+    ;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+}
+
+
+#main {
+    grid-area:mn;
+    display:grid;
+    grid-template-areas: 
+    'mb mb'
+    'mi mi'
+    'mi mi'
+    ;
+    grid-template-rows: 20% 40% 40%;
+}
+#mapbar {
+    grid-area: mb;
+    padding-left:50px
+
+}
+
+#mapimage {
+    grid-area: mi;
+    background-image: url(/img/city\ map.jpeg);
+    filter:blur(1px);
+    -webkit-filter: blur(1px);
+    border:rgb(81, 94, 23) ridge 20px;
+}
+
+.location {
+    border:orangered 4px solid;
+    border-radius: 30px;
+    font-size:20px;
+    padding:5px;
+    text-align: center;
+    padding-right:2em;
+    padding-left:2em;
+    background-color: #1dd8a9;;
+
+}
+
+#locationboxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}

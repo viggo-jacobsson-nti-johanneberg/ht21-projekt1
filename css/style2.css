@@ -1,0 +1,84 @@
+
+body {
+    margin: 0px;
+    
+}
+
+#navitems {
+    grid-area:ni;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #1dd8a9;
+    height: 3em;
+    margin-top: 0px;
+    padding-top: 2em;
+    border-bottom:inset rgb(255, 140, 0) 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(179, 98, 0);
+    width: 100%;
+    margin-bottom:0px;
+
+}
+
+
+.navbar {
+    grid-area:nv;
+    display: flex;
+}
+
+footer {
+    grid-area: ft;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:teal;
+    height: 7em;
+    border-top:solid rgb(1, 63, 63) 10px;
+    
+    }
+    
+    #footerindex {
+    text-align:center;
+    line-height: 1.3em;
+    
+}
+
+
+li {
+    list-style-type: none
+}
+
+h1 {
+    color:rgb(4, 131, 131);
+    text-decoration: underline 8px;
+    
+    
+}
+
+h2 {
+    color:rgb(255, 140, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 1px;
+}
+
+#logo {
+
+    position: relative;
+    top:-30px;
+}
+
+a {
+    text-decoration: none;
+    color:#544336;
+}
+
+#restu_name {
+    color:rgb(81, 94, 23);
+    text-decoration: none;
+    font-size: 2em;
+    position:relative;
+    top:-15px;
+    left: -60px;
+}
+

@@ -7,14 +7,12 @@ body {
 #wrapper {
     display: grid;
     grid-template-areas: 
-    'nv nv nv nv nv'
-    'mn mn mn mn mn'    
-    'mn mn mn mn mn'
-    'mn mn mn mn mn'
-    'mn mn mn mn mn'
-    'mn mn mn mn mn'
-    'ft ft ft ft ft'
-    'ft ft ft ft ft'
+    'nv nv'
+    'mt mt'
+    'mn mn' 
+    'mn mn'
+    'ft ft'
+    'ft ft'
     ;
 
 }
@@ -26,16 +24,18 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #1dd8a9;
+    background-color: #9db174;
     height: 3em;
     margin-top: 0px;
     padding-top: 2em;
-    border-bottom:inset rgb(255, 140, 0) 10px;
+    border-bottom:inset #544336 10px;
     font-family: 'Mochiy Pop P One', sans-serif;
-    color: rgb(179, 98, 0);
+    color: #544336;
     width: 100%;
     margin-bottom:0px;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 footer {
@@ -43,16 +43,15 @@ grid-area: ft;
 display:flex;
 flex-direction: row;
 justify-content: center;
-background-color:teal;
+background-color: #9db174;
 height: 7em;
-border-top:solid rgb(1, 63, 63) 10px;
-
+border-top:solid #544336 10px;
+color: rgb(40, 48, 8);
 }
 
 #footerindex {
 text-align:center;
-line-height: 1.3em;
-
+line-height: 1.5em;
 }
 
 .navbar {
@@ -65,21 +64,46 @@ li {
     list-style-type: none
 }
 
+#main {
+    background-color: #D6D2CC;;
+}
 
+#menutitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    grid-area:mt;
+    margin-bottom:10px;
+    font-size:3em;
+    text-decoration: none;
+    border-bottom: solid ;
+    width: 4em;
+    text-align:center;
+    
+}
+
+#titlebox {
+    width:100%
+}
+#header_menu_box {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 20px;
+}
 #menu {
 grid-area: mn;
 display:grid;
 grid-template-areas: 
-'ll lr'
-'ll lr'
-'ll lr'
-'ll lr'
+'mt mt'
 'll lr'
 ;
 grid-template-columns: 50% 50%;
 text-overflow: ellipsis;
 text-align:center;
-background-color:rgb(201, 247, 179);
+background-color:#D6D2CC;
 }
 
 #ListLeft {
@@ -98,14 +122,14 @@ background-color:rgb(201, 247, 179);
 }
 
 h1 {
-    color:rgb(0, 94, 94);
+    color:rgb(81, 94, 23);
     text-decoration: underline 8px;
     
     
 }
 
 h2 {
-    color:rgb(255, 140, 0);
+    color:#544336;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    letter-spacing: 1px;
 }
@@ -116,3 +140,16 @@ h2 {
     top:-30px;
 }
 
+a {
+    text-decoration: none;
+    color:#544336;
+}
+
+#restu_name {
+    color:rgb(81, 94, 23);
+    text-decoration: none;
+    font-size: 2em;
+    position:relative;
+    top:-15px;
+    left: -60px;
+}

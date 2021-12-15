@@ -1,7 +1,18 @@
 
 body {
-    margin: 0px;
-    
+    margin: 0px;   
+}
+
+#wrapper {
+    display:grid;
+    grid-template-areas:
+    'nv nv'
+    'mn mn'
+    'ft ft'
+    'ft ft'
+    ;
+    grid-template-rows: 1fr 4fr 1fr;
+    height:100vh;
 }
 
 #navitems {
@@ -9,22 +20,44 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #1dd8a9;
+    background-color: #9db174;
     height: 3em;
     margin-top: 0px;
     padding-top: 2em;
-    border-bottom:inset rgb(255, 140, 0) 10px;
+    border-bottom:inset #544336 10px;
     font-family: 'Mochiy Pop P One', sans-serif;
-    color: rgb(179, 98, 0);
+    color: #544336;
     width: 100%;
     margin-bottom:0px;
-
+    position: fixed;
+    width: 100%;
 }
-
 
 .navbar {
     grid-area:nv;
     display: flex;
+    background-color: #D6D2CC;
+}
+
+#main {
+    grid-area:mn;
+    display:grid;
+    grid-template-areas: 
+    'eb ew'
+    'eb ew'
+    'eb ew'
+    ;
+    grid-template-columns:2fr 2fr ;
+    background-color: #D6D2CC;
+}
+
+.Erb {
+    grid-area:eb;
+
+}
+
+#erb_whitespace {
+    grid-area:ew;
 }
 
 footer {
@@ -32,16 +65,14 @@ footer {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color:teal;
+    background-color: #6a794d;
     height: 7em;
-    border-top:solid rgb(1, 63, 63) 10px;
-    
-    }
-    
-    #footerindex {
+    border-top:solid #544336 10px;
+    color: rgb(40, 48, 8);
+}    
+#footerindex {
     text-align:center;
-    line-height: 1.3em;
-    
+    line-height: 1.5em;
 }
 
 
@@ -57,8 +88,7 @@ h1 {
 }
 
 h2 {
-    color:rgb(255, 140, 0);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #544336;
    letter-spacing: 1px;
 }
 
@@ -82,3 +112,16 @@ a {
     left: -60px;
 }
 
+#MenuLine {
+    grid-area:ml;
+    color: rgb(255, 140, 0);
+}
+
+.erb_line {
+    border:solid #544336 1px;
+
+}
+
+p {
+    color:rgb(81, 94, 23);
+}

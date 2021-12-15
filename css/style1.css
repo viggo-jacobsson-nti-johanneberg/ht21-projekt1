@@ -43,7 +43,7 @@ grid-area: ft;
 display:flex;
 flex-direction: row;
 justify-content: center;
-background-color: #9db174;
+background-color: #6a794d;
 height: 7em;
 border-top:solid #544336 10px;
 color: rgb(40, 48, 8);
@@ -152,4 +152,5 @@ a {
     position:relative;
     top:-15px;
     left: -60px;
+    
 }

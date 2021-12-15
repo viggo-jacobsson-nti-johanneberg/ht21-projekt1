@@ -19,7 +19,6 @@ body {
     width: 100%;
     margin-bottom:0px;
     position: fixed;
-    top: 0;
     width: 100%;
 }
 
@@ -33,7 +32,7 @@ footer {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #9db174;
+    background-color: #6a794d;
     height: 7em;
     border-top:solid #544336 10px;
     color: rgb(40, 48, 8);
@@ -49,10 +48,7 @@ li {
 }
 
 h1 {
-    color:rgb(4, 131, 131);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-    
+    color:rgb(81, 94, 23);
 }
 
 h2 {
@@ -91,7 +87,8 @@ a {
     'mn mn'
     'ft ft'
     ;
-    grid-template-rows: 1fr 1fr 6fr 1fr;
+    grid-template-rows: 1fr 2fr 5fr 1fr;
+    background-color: #D6D2CC;
 }
 
 
@@ -105,30 +102,33 @@ a {
     ;
     grid-template-rows: 20% 40% 40%;
 }
+
 #mapbar {
     grid-area: mb;
-    padding-left:50px
-
+    padding-left:50px;
 }
 
 #mapimage {
     grid-area: mi;
     background-image: url(/img/city\ map.jpeg);
-    filter:blur(1px);
-    -webkit-filter: blur(1px);
+    filter:blur(0.5px);
     border:rgb(81, 94, 23) ridge 20px;
 }
 
 .location {
-    border:orangered 4px solid;
+    border:#544336 4px solid;
     border-radius: 30px;
     font-size:20px;
     padding:5px;
     text-align: center;
     padding-right:2em;
     padding-left:2em;
-    background-color: #1dd8a9;;
+    background-color: #9db174;
+}
 
+.location:hover {
+    background-color:#b3c989;
+    border-color:#6b5646;
 }
 
 #locationboxes {

@@ -60,6 +60,14 @@ body {
     grid-area:ew;
 }
 
+.erb_prices{
+    color:#544336;
+    line-height: 4em;
+    padding-top: 3em;
+    font-size:20px;
+    font-weight: bold;
+}
+
 footer {
     grid-area: ft;
     display:flex;
